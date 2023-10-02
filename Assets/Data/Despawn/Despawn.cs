@@ -15,7 +15,7 @@ public abstract class Despawn : ShipMonoBehaviour
         this.DespawnObject();
     }
 
-    protected virtual void DespawnObject()
+    public virtual void DespawnObject()
     {
         Destroy(transform.parent.gameObject);
     }

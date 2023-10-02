@@ -7,6 +7,9 @@ public class JunkCtrl : ShipMonoBehaviour
     [SerializeField] protected Transform model;
     public Transform Model { get => model; }
 
+    [SerializeField] protected JunkDespawn junkDespawn;
+    public JunkDespawn JunkDespawn { get => junkDespawn; }
+
     protected override void LoadComponents()
     {
         base.LoadComponents();

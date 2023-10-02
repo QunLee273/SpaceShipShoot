@@ -4,17 +4,22 @@ using UnityEngine;
 
 public abstract class Spawner : ShipMonoBehaviour
 {
+    [Header("Spawner")]
     [SerializeField] protected Transform holder;
+
+    [SerializeField] protected int spawnedCount = 0;
+    public int SpawnedCount => spawnedCount;
+
     [SerializeField] protected List<Transform> prefabs;
     [SerializeField] protected List<Transform> poolObjs;
 
     protected override void LoadComponents()
     {
         this.LoadPrefabs();
-        this.LoadHodler();
+        this.LoadHolder();
     }
 
-    protected virtual void LoadHodler()
+    protected virtual void LoadHolder()
     {
         if (this.holder != null) return;
         this.holder = transform.Find("Holder");
@@ -57,6 +62,7 @@ public abstract class Spawner : ShipMonoBehaviour
         newPrefab.SetPositionAndRotation(spawnPos, rotation);
 
         newPrefab.parent = this.holder;
+        this.spawnedCount++;
         return newPrefab;
     }
 
@@ -64,6 +70,8 @@ public abstract class Spawner : ShipMonoBehaviour
     {
         foreach (Transform poolObj in this.poolObjs)
         {
+            if (poolObj == null) continue;
+
             if (poolObj.name == prefab.name)
             {
                 this.poolObjs.Remove(poolObj);
@@ -80,6 +88,7 @@ public abstract class Spawner : ShipMonoBehaviour
     {
         this.poolObjs.Add(obj);
         obj.gameObject.SetActive(false);
+        this.spawnedCount--;
     }
 
     public virtual Transform GetPrefabByName(string prefabName)
