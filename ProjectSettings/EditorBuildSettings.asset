@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GamePlay.unity
+    path: Assets/_Scenes/Menu.unity
+    guid: 54d7e7bc744bfac418b8b42757db3ff6
+  - enabled: 1
+    path: Assets/_Scenes/LoadingScene.unity
+    guid: e3b9d0537f6806445b2b78852a32518c
+  - enabled: 1
+    path: Assets/_Scenes/Galaxy_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

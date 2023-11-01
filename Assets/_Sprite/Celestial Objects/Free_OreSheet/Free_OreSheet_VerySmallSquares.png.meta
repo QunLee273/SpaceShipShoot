@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: f7b0db39b536b544284f161fe2372987
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6111945269159227044
+    second: Free_OreSheet_VerySmallSquares_0
+  - first:
+      213: -6612399496644374660
+    second: Free_OreSheet_VerySmallSquares_1
+  - first:
+      213: -2042059324331366435
+    second: Free_OreSheet_VerySmallSquares_2
+  - first:
+      213: -4617843040002785547
+    second: Free_OreSheet_VerySmallSquares_3
+  - first:
+      213: 6399108765439739163
+    second: Free_OreSheet_VerySmallSquares_4
+  - first:
+      213: 1245441832520270499
+    second: Free_OreSheet_VerySmallSquares_5
+  - first:
+      213: -2576813624176954090
+    second: Free_OreSheet_VerySmallSquares_6
+  - first:
+      213: 6693041171675708121
+    second: Free_OreSheet_VerySmallSquares_7
+  - first:
+      213: -4089976666226187820
+    second: Free_OreSheet_VerySmallSquares_8
+  - first:
+      213: 685315392211735555
+    second: Free_OreSheet_VerySmallSquares_9
+  - first:
+      213: 6402303815366892143
+    second: Free_OreSheet_VerySmallSquares_10
+  - first:
+      213: -8902326995701238871
+    second: Free_OreSheet_VerySmallSquares_11
+  - first:
+      213: 6922519315646484600
+    second: Free_OreSheet_VerySmallSquares_12
+  - first:
+      213: -4053650818972545461
+    second: Free_OreSheet_VerySmallSquares_13
+  - first:
+      213: 7296081926764832676
+    second: Free_OreSheet_VerySmallSquares_14
+  - first:
+      213: -3841078065476801254
+    second: Free_OreSheet_VerySmallSquares_15
+  - first:
+      213: 8835684168414621514
+    second: Free_OreSheet_VerySmallSquares_16
+  - first:
+      213: -8537721726083139659
+    second: Free_OreSheet_VerySmallSquares_17
+  - first:
+      213: 5318478285500051591
+    second: Free_OreSheet_VerySmallSquares_18
+  - first:
+      213: -4464640054476490239
+    second: Free_OreSheet_VerySmallSquares_19
+  - first:
+      213: 3607412477967581877
+    second: Free_OreSheet_VerySmallSquares_20
+  - first:
+      213: 4847755909932678851
+    second: Free_OreSheet_VerySmallSquares_21
+  - first:
+      213: 6016024467963818816
+    second: Free_OreSheet_VerySmallSquares_22
+  - first:
+      213: -12622571721415626
+    second: Free_OreSheet_VerySmallSquares_23
+  - first:
+      213: 7786466574308642508
+    second: Free_OreSheet_VerySmallSquares_24
+  - first:
+      213: -637540658524767872
+    second: Free_OreSheet_VerySmallSquares_25
+  - first:
+      213: -7525536910453582996
+    second: Free_OreSheet_VerySmallSquares_26
+  - first:
+      213: 5770244269828285795
+    second: Free_OreSheet_VerySmallSquares_27
+  - first:
+      213: -1800096093831916512
+    second: Free_OreSheet_VerySmallSquares_28
+  - first:
+      213: 5667276845961627258
+    second: Free_OreSheet_VerySmallSquares_29
+  - first:
+      213: 3873959943526697254
+    second: Free_OreSheet_VerySmallSquares_30
+  - first:
+      213: -3021558168152657914
+    second: Free_OreSheet_VerySmallSquares_31
+  - first:
+      213: -8850080711067051016
+    second: Free_OreSheet_VerySmallSquares_32
+  - first:
+      213: -7899670648527011301
+    second: Free_OreSheet_VerySmallSquares_33
+  - first:
+      213: 8732316538899617575
+    second: Free_OreSheet_VerySmallSquares_34
+  - first:
+      213: -5871929764617069543
+    second: Free_OreSheet_VerySmallSquares_35
+  - first:
+      213: 5052840377011728989
+    second: Free_OreSheet_VerySmallSquares_36
+  - first:
+      213: 2205664526463079403
+    second: Free_OreSheet_VerySmallSquares_37
+  - first:
+      213: -7380384865608825813
+    second: Free_OreSheet_VerySmallSquares_38
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae6ddef6ddf1d450800000000000000
+      internalID: 6111945269159227044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 79
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f4a8911b90c34a0800000000000000
+      internalID: -6612399496644374660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd764f22dd529a3e0800000000000000
+      internalID: -2042059324331366435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5febf14b8302aefb0800000000000000
+      internalID: -4617843040002785547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 79
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15cf1ba4833ec850800000000000000
+      internalID: 6399108765439739163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 79
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a248cf7fb2b84110800000000000000
+      internalID: 1245441832520270499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615bb8e49a15d3cd0800000000000000
+      internalID: -2576813624176954090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 79
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da7bc00c7572ec50800000000000000
+      internalID: 6693041171675708121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 79
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1a3f544eb7d37c0800000000000000
+      internalID: -4089976666226187820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30453efd7bab28900800000000000000
+      internalID: 685315392211735555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 63
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a5213366d89d850800000000000000
+      internalID: 6402303815366892143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 63
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a37bd293c4947480800000000000000
+      internalID: -8902326995701238871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 63
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87093e7f3aab11060800000000000000
+      internalID: 6922519315646484600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 63
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e8babae0a8eb7c0800000000000000
+      internalID: -4053650818972545461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 63
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a727f82bd3e04560800000000000000
+      internalID: 7296081926764832676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 47
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1de5b0b9dfb1bac0800000000000000
+      internalID: -3841078065476801254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_16
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 47
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f65ed00f7ae9a70800000000000000
+      internalID: 8835684168414621514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 47
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7fdad235be38980800000000000000
+      internalID: -8537721726083139659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_18
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780fbd872d70fc940800000000000000
+      internalID: 5318478285500051591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 47
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ab2fe66896a02c0800000000000000
+      internalID: -4464640054476490239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_20
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2c19b298a101230800000000000000
+      internalID: 3607412477967581877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_21
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce7659c050b64340800000000000000
+      internalID: 4847755909932678851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 31
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043ba0d11663d7350800000000000000
+      internalID: 6016024467963818816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_23
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634a46086d723dff0800000000000000
+      internalID: -12622571721415626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_24
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 31
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce8e1948161f0c60800000000000000
+      internalID: 7786466574308642508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08933ce16200727f0800000000000000
+      internalID: -637540658524767872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_26
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 31
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63d25c4d0cef8790800000000000000
+      internalID: -7525536910453582996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_27
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 15
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36529526796041050800000000000000
+      internalID: 5770244269828285795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_28
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0249495d326c407e0800000000000000
+      internalID: -1800096093831916512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_29
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 15
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76c65fc34636ae40800000000000000
+      internalID: 5667276845961627258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_30
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62940042b0213c530800000000000000
+      internalID: 3873959943526697254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_31
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 15
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600b41fdad44116d0800000000000000
+      internalID: -3021558168152657914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_32
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbdf47ab723e2580800000000000000
+      internalID: -8850080711067051016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_33
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12c7ff366bbe5290800000000000000
+      internalID: -7899670648527011301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727516750ab6f2970800000000000000
+      internalID: 8732316538899617575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_35
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91cd4f96df6b28ea0800000000000000
+      internalID: -5871929764617069543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_36
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52f8824d8b4f1640800000000000000
+      internalID: 5052840377011728989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_37
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3138163381c9e10800000000000000
+      internalID: 2205664526463079403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_OreSheet_VerySmallSquares_38
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2487b3511b939990800000000000000
+      internalID: -7380384865608825813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
