@@ -1,0 +1,4 @@
+repository "SShipShoot@quan2732k3@cloud"
+  path "/"
+    br "/main"
+    co "/main"
