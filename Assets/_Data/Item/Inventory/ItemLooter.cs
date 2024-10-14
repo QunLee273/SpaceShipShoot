@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,19 +36,25 @@ public class ItemLooter : InventoryAbstract
 
     protected virtual void OnTriggerEnter(Collider collider)
     {
-
         ItemPickupable itemPickupable = collider.GetComponent<ItemPickupable>();
         if (itemPickupable == null) return;
 
         ItemCode itemCode = itemPickupable.GetItemCode();
         ItemInventory itemInventory = itemPickupable.ItemCtrl.ItemInventory;
 
-
         if (this.inventory.AddItem(itemInventory))
         {
             itemPickupable.Picked();
+
+            // Kiểm tra xem ExperienceBar.Instance có tồn tại hay không
+            if (ExperienceBar.Instance != null)
+            {
+                int xpGained = 25; // giá trị XP nhặt được
+                ExperienceBar.Instance.currentXP += xpGained;
+
+                // Cập nhật thanh XP
+                ExperienceBar.Instance.XPShowing();
+            }
         }
-
     }
-
 }

@@ -208,6 +208,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1040,7 +1052,46 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Free_OreSheet_VerySmallSquares_0: 6111945269159227044
+      Free_OreSheet_VerySmallSquares_1: -6612399496644374660
+      Free_OreSheet_VerySmallSquares_10: 6402303815366892143
+      Free_OreSheet_VerySmallSquares_11: -8902326995701238871
+      Free_OreSheet_VerySmallSquares_12: 6922519315646484600
+      Free_OreSheet_VerySmallSquares_13: -4053650818972545461
+      Free_OreSheet_VerySmallSquares_14: 7296081926764832676
+      Free_OreSheet_VerySmallSquares_15: -3841078065476801254
+      Free_OreSheet_VerySmallSquares_16: 8835684168414621514
+      Free_OreSheet_VerySmallSquares_17: -8537721726083139659
+      Free_OreSheet_VerySmallSquares_18: 5318478285500051591
+      Free_OreSheet_VerySmallSquares_19: -4464640054476490239
+      Free_OreSheet_VerySmallSquares_2: -2042059324331366435
+      Free_OreSheet_VerySmallSquares_20: 3607412477967581877
+      Free_OreSheet_VerySmallSquares_21: 4847755909932678851
+      Free_OreSheet_VerySmallSquares_22: 6016024467963818816
+      Free_OreSheet_VerySmallSquares_23: -12622571721415626
+      Free_OreSheet_VerySmallSquares_24: 7786466574308642508
+      Free_OreSheet_VerySmallSquares_25: -637540658524767872
+      Free_OreSheet_VerySmallSquares_26: -7525536910453582996
+      Free_OreSheet_VerySmallSquares_27: 5770244269828285795
+      Free_OreSheet_VerySmallSquares_28: -1800096093831916512
+      Free_OreSheet_VerySmallSquares_29: 5667276845961627258
+      Free_OreSheet_VerySmallSquares_3: -4617843040002785547
+      Free_OreSheet_VerySmallSquares_30: 3873959943526697254
+      Free_OreSheet_VerySmallSquares_31: -3021558168152657914
+      Free_OreSheet_VerySmallSquares_32: -8850080711067051016
+      Free_OreSheet_VerySmallSquares_33: -7899670648527011301
+      Free_OreSheet_VerySmallSquares_34: 8732316538899617575
+      Free_OreSheet_VerySmallSquares_35: -5871929764617069543
+      Free_OreSheet_VerySmallSquares_36: 5052840377011728989
+      Free_OreSheet_VerySmallSquares_37: 2205664526463079403
+      Free_OreSheet_VerySmallSquares_38: -7380384865608825813
+      Free_OreSheet_VerySmallSquares_4: 6399108765439739163
+      Free_OreSheet_VerySmallSquares_5: 1245441832520270499
+      Free_OreSheet_VerySmallSquares_6: -2576813624176954090
+      Free_OreSheet_VerySmallSquares_7: 6693041171675708121
+      Free_OreSheet_VerySmallSquares_8: -4089976666226187820
+      Free_OreSheet_VerySmallSquares_9: 685315392211735555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

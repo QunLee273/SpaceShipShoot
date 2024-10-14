@@ -193,6 +193,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -920,7 +932,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hole_0: -7766556133328041569
+      Hole_1: 1905009374728934772
+      Hole_10: -1060507536714344151
+      Hole_11: -4057308545800469166
+      Hole_12: -1236143932649467595
+      Hole_13: -6481213567728382359
+      Hole_14: -3207894078075300656
+      Hole_15: 5420292443041091387
+      Hole_16: -4665616177373406163
+      Hole_17: 55122363649873682
+      Hole_18: 5268956450606720858
+      Hole_19: 2005785937617850913
+      Hole_2: 3352147242149728353
+      Hole_20: -3222230420613587237
+      Hole_21: -1880086270486502227
+      Hole_22: 6183784891122263553
+      Hole_23: 1536775475955004681
+      Hole_24: 7756051063245656335
+      Hole_25: 8832861654624301813
+      Hole_26: -204094314547558631
+      Hole_27: 3986828297231978335
+      Hole_28: -3375332839412007796
+      Hole_29: 3286127240322741228
+      Hole_3: 3028693088056241460
+      Hole_30: -842708028203988867
+      Hole_31: -7109890111454113009
+      Hole_32: 2664213433550344790
+      Hole_33: -4159997980325797496
+      Hole_4: 1724560546240382028
+      Hole_5: 8178051432217251750
+      Hole_6: 4307116326235270887
+      Hole_7: 5235935667052707611
+      Hole_8: -8612556319568841308
+      Hole_9: -8001336819838307499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

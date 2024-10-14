@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class ObjShooting : ShipMonoBehaviour
 {
     [SerializeField] protected bool isShooting = false;
-    [SerializeField] protected float shootDelay = 0.5f;
+    [SerializeField] public float shootDelay = 0.5f;
     [SerializeField] protected float shootTimer = 0f;
 
     [SerializeField] protected bool isShip = false;

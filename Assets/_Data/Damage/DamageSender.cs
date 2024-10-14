@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageSender : ShipMonoBehaviour
 {
-    [SerializeField] protected int damage = 1;
+    [SerializeField] public int damage = 1;
 
     public virtual void Send(Transform obj)
     {

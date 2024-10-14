@@ -32,11 +32,10 @@ public class SpawnRandom : ShipMonoBehaviour
     {
         this.JunkSpawning();
     }
-
     protected virtual void JunkSpawning()
     {
         if (this.RandomReachLimit()) return;
-
+            
         this.randomTimer += Time.fixedDeltaTime;
         if (this.randomTimer < this.randomDelay) return;
         this.randomTimer = 0;

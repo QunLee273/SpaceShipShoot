@@ -11,8 +11,16 @@ public abstract class DamageReceiver : ShipMonoBehaviour
     [SerializeField] protected int hpMax = 2;
     [SerializeField] protected bool isDead = false;
 
-    public int HP => hp;
-    public int HPMax => hpMax;
+    public int HP
+    {
+        get { return hp; }
+        set { hp = value; }
+    }
+    public int HPMax
+    {
+        get { return hpMax; }
+        set { hpMax = value; }
+    }
 
     protected override void OnEnable()
     {
@@ -48,8 +56,14 @@ public abstract class DamageReceiver : ShipMonoBehaviour
         if (this.hp > this.hpMax) this.hp = this.hpMax;
     }
 
+    public bool isDebug = false;
     public virtual void Deduct(int deduct)
     {
+
+        if (isDebug)
+        {
+            Debug.Log("VAR");
+        }
         if (this.isDead) return;
 
         this.hp -= deduct;
