@@ -50,11 +50,11 @@ public abstract class ShootableObjectCtrl : ShipMonoBehaviour
     }
 
     protected virtual void LoadSpawner()
-        {
-            if (this.spawner != null) return;
-            this.spawner = transform.parent?.parent?.GetComponent<Spawner>();
-            Debug.LogWarning(transform.name + ": LoadSpawner", gameObject);
-        }
+    {
+        if (this.spawner != null) return;
+        this.spawner = transform.parent?.parent?.GetComponent<Spawner>();
+        if (!CompareTag("Player")) Debug.LogWarning(transform.name + ": LoadSpawner", gameObject);
+    }
 
     protected virtual void LoadModel()
     {

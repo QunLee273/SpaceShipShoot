@@ -56,14 +56,8 @@ public abstract class DamageReceiver : ShipMonoBehaviour
         if (this.hp > this.hpMax) this.hp = this.hpMax;
     }
 
-    public bool isDebug = false;
     public virtual void Deduct(int deduct)
     {
-
-        if (isDebug)
-        {
-            Debug.Log("VAR");
-        }
         if (this.isDead) return;
 
         this.hp -= deduct;

@@ -97,34 +97,21 @@ public class ExperienceBar : ShipMonoBehaviour
 
             currentLV++;
 
-            // Tăng thông số
             this.IncreaseParameter();
         }
     }
 
-    // Phương thức tăng thông số
     protected virtual void IncreaseParameter()
     {
-        // Tăng sát thương
-        if (this.damageSender != null)
-        {
-            this.damageSender.damage += 5;
-            //Debug.Log("Damage increased to: " + this.damageSender.damage);
-        }
+        this.damageSender.damage += 5;
+        //Debug.Log("Damage increased to: " + this.damageSender.damage);
+        
 
-        // Tăng HP tối đa
-        if (this.shootableObjectCtrl.DamageReceiver != null)
-        {
-            this.shootableObjectCtrl.DamageReceiver.HPMax += 25; // Chỉ thay đổi hpMax trong DamageReceiver
-            this.shootableObjectCtrl.DamageReceiver.HP = this.shootableObjectCtrl.DamageReceiver.HPMax; // Hồi đầy HP sau khi lên cấp
-            //Debug.Log("Max HP increased to: " + this.shootableObjectCtrl.DamageReceiver.HPMax);
-        }
+        this.shootableObjectCtrl.DamageReceiver.HPMax += 25;
+        this.shootableObjectCtrl.DamageReceiver.HP = this.shootableObjectCtrl.DamageReceiver.HPMax;
+        //Debug.Log("Max HP increased to: " + this.shootableObjectCtrl.DamageReceiver.HPMax);
 
-        // Tăng tốc độ bắn
-        if (this.shootableObjectCtrl.ObjShooting != null)
-        {
-            this.shootableObjectCtrl.ObjShooting.shootDelay -= 0.05f; 
-            //Debug.Log("Shoot Delay increased to: " + this.shootableObjectCtrl.ObjShooting.shootDelay);
-        }
+        this.shootableObjectCtrl.ObjShooting.shootDelay -= 0.05f; 
+        //Debug.Log("Shoot Delay increased to: " + this.shootableObjectCtrl.ObjShooting.shootDelay);
     }
 }

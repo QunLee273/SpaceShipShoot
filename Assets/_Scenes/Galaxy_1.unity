@@ -1683,7 +1683,6 @@ MonoBehaviour:
   hp: 1
   hpMax: 2
   isDead: 0
-  isDebug: 0
   shootablObjectCtrl: {fileID: 1284040239}
   gameOver: {fileID: 588089010}
 --- !u!135 &200497869
@@ -1705,7 +1704,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.3
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &203234222
 GameObject:
@@ -1756,7 +1755,6 @@ MonoBehaviour:
   hp: 1
   hpMax: 2
   isDead: 0
-  isDebug: 0
   shootablObjectCtrl: {fileID: 1733480305}
 --- !u!135 &203234225
 SphereCollider:
@@ -1777,7 +1775,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.13
+  m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &208563877
 GameObject:
@@ -4877,9 +4875,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717010445}
-  - component: {fileID: 717010448}
   - component: {fileID: 717010447}
   - component: {fileID: 717010446}
+  - component: {fileID: 717010448}
   m_Layer: 0
   m_Name: BulletImpart
   m_TagString: Untagged
@@ -5846,7 +5844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 595771092}
-  despawn: {fileID: 1407106486}
+  despawn: {fileID: 1407106488}
   shootableObject: {fileID: 11400000, guid: 3a7122dff12771d4687fdfe71cf491a7, type: 2}
   objShooting: {fileID: 1142282654}
   objMovement: {fileID: 1119523457}
@@ -7331,7 +7329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &959227009
 Transform:
   m_ObjectHideFlags: 0
@@ -8701,7 +8699,6 @@ MonoBehaviour:
   hp: 1
   hpMax: 2
   isDead: 0
-  isDebug: 0
   junkCtrl: {fileID: 480373177}
 --- !u!1 &1134013577
 GameObject:
@@ -8873,7 +8870,6 @@ MonoBehaviour:
   hp: 1
   hpMax: 2
   isDead: 0
-  isDebug: 0
   shootablObjectCtrl: {fileID: 1026363136}
   gameWin: {fileID: 273606262}
   isSpawnner: {fileID: 2002788979}
@@ -10108,7 +10104,6 @@ MonoBehaviour:
   hp: 1
   hpMax: 2
   isDead: 0
-  isDebug: 0
   shootablObjectCtrl: {fileID: 806395463}
 --- !u!135 &1220766334
 SphereCollider:
@@ -10372,6 +10367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284040238}
   - component: {fileID: 1284040239}
+  - component: {fileID: 1284040240}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Player
@@ -10425,6 +10421,33 @@ MonoBehaviour:
   damageReceiver: {fileID: 200497868}
   spawnPoints: {fileID: 1571493996}
   inventory: {fileID: 2120025950}
+--- !u!54 &1284040240
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284040237}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1284798619
 GameObject:
   m_ObjectHideFlags: 0
@@ -11426,7 +11449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1407106487}
-  - component: {fileID: 1407106486}
+  - component: {fileID: 1407106488}
   m_Layer: 0
   m_Name: Despawn
   m_TagString: Untagged
@@ -11434,21 +11457,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1407106486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407106485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d23ebf4747276d740a5da8e417c9ab0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disLimit: 25
-  distance: 0
-  mainCam: {fileID: 519420032}
 --- !u!4 &1407106487
 Transform:
   m_ObjectHideFlags: 0
@@ -11464,6 +11472,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 806395464}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1407106488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407106485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a4aa0bc01575847a633f9205735f13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disLimit: 70
+  distance: 0
+  mainCam: {fileID: 519420032}
 --- !u!1 &1427944897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11558,7 +11581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1443839510
 Transform:
   m_ObjectHideFlags: 0
@@ -15719,8 +15742,8 @@ Transform:
   - {fileID: 2056792448}
   - {fileID: 959227009}
   - {fileID: 1123164572}
-  - {fileID: 2088815679}
   - {fileID: 660754385}
+  - {fileID: 2088815679}
   - {fileID: 1515718693}
   - {fileID: 1533642040}
   m_Father: {fileID: 0}
@@ -16599,7 +16622,6 @@ MonoBehaviour:
   hp: 1
   hpMax: 2
   isDead: 0
-  isDebug: 0
   junkCtrl: {fileID: 1160080345}
 --- !u!212 &3302221598115750908
 SpriteRenderer:
