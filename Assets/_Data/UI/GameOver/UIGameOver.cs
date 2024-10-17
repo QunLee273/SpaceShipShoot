@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class UIGameOver : ShipMonoBehaviour
 {
-    private static UIGameOver instance;
-    public static UIGameOver Instance => instance;
-
     [SerializeField] protected GameObject gameOver;
     public GameObject GameOver => gameOver;
 

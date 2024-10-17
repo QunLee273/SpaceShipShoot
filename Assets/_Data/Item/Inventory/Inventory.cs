@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : ShipMonoBehaviour
 {
-    private static Inventory instance;
-    public static Inventory Instance => instance;
-
     [SerializeField] protected int maxSlot = 64;
     [SerializeField] protected List<ItemInventory> items;
     public List<ItemInventory> Items => items;
@@ -99,7 +97,7 @@ public class Inventory : ShipMonoBehaviour
     protected virtual ItemProfileSO GetItemProfile(ItemCode itemCode)
     {
         var profiles = Resources.LoadAll("Item", typeof(ItemProfileSO));
-        foreach (ItemProfileSO profile in profiles)
+        foreach (ItemProfileSO profile in profiles.Cast<ItemProfileSO>())
         {
             if (profile.itemCode != itemCode) continue;
             return profile;

@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class UIGameWin : ShipMonoBehaviour
 {
-    private static UIGameWin instance;
-    public static UIGameWin Instance => instance;
-
     [SerializeField] protected GameObject gameWin;
     public GameObject GameWin => gameWin;
 
@@ -16,7 +13,6 @@ public class UIGameWin : ShipMonoBehaviour
     {
         base.LoadComponents();
         this.LoadGameOver();
-        
     }
 
     protected virtual void Update()
