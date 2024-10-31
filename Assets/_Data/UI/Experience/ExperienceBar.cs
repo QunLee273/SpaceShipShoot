@@ -24,6 +24,9 @@ public class ExperienceBar : ShipMonoBehaviour
 
     [SerializeField] protected DamageSender damageSender;
     [SerializeField] protected ShootableObjectCtrl shootableObjectCtrl;
+    [SerializeField] protected int increaseHp = 25;
+    [SerializeField] protected int increaseDamage = 5;
+    [SerializeField] protected float delayShoot = 0.05f;
 
     protected override void Awake()
     {
@@ -103,15 +106,15 @@ public class ExperienceBar : ShipMonoBehaviour
 
     protected virtual void IncreaseParameter()
     {
-        this.damageSender.damage += 5;
+        this.damageSender.damage += increaseDamage;
         //Debug.Log("Damage increased to: " + this.damageSender.damage);
         
 
-        this.shootableObjectCtrl.DamageReceiver.HPMax += 25;
+        this.shootableObjectCtrl.DamageReceiver.HPMax += increaseHp;
         this.shootableObjectCtrl.DamageReceiver.HP = this.shootableObjectCtrl.DamageReceiver.HPMax;
         //Debug.Log("Max HP increased to: " + this.shootableObjectCtrl.DamageReceiver.HPMax);
 
-        this.shootableObjectCtrl.ObjShooting.shootDelay -= 0.05f; 
+        this.shootableObjectCtrl.ObjShooting.shootDelay -= delayShoot; 
         //Debug.Log("Shoot Delay increased to: " + this.shootableObjectCtrl.ObjShooting.shootDelay);
     }
 }

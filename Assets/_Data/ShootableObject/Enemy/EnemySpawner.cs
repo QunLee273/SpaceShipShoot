@@ -7,8 +7,12 @@ public class EnemySpawner : Spawner
     private static EnemySpawner instance;
     public static EnemySpawner Instance => instance;
 
-    [SerializeField] protected float paramIncreaseTime = 60f;
+    [SerializeField] protected float paramIncreaseTime = 20f;
     [SerializeField] protected float elapsedTime = 0f;
+
+    [SerializeField] protected DamageSender damageSender;
+    [SerializeField] protected int increaseHp = 10;
+    [SerializeField] protected int increaseDamage = 1;
 
     protected override void Awake()
     {
@@ -58,18 +62,13 @@ public class EnemySpawner : Spawner
 
     protected void IncreaseEnemyParam()
     {
+        damageSender.damage += increaseDamage;
         foreach (Transform enemy in holder)
         {
-            ShootableObjectCtrl shootableCtrl = enemy.GetComponent<ShootableObjectCtrl>();
-            if (shootableCtrl != null)
+            EnemyCtrl enemyCtrl = enemy.GetComponent<EnemyCtrl>();
+            if (enemyCtrl != null)
             {
-                shootableCtrl.DamageReceiver.HPMax += 10;
-            }
-
-            DamageSender damageSender = enemy.GetComponent<DamageSender>();
-            if (damageSender != null)
-            {
-                damageSender.damage += 1;
+                enemyCtrl.DamageReceiver.HPMax += increaseHp;
             }
         }
     }

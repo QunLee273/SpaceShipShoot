@@ -4762,6 +4762,9 @@ MonoBehaviour:
   prefabs:
   - {fileID: 806395464}
   poolObjs: []
+  paramIncreaseTime: 20
+  elapsedTime: 0
+  increaseHp: 10
 --- !u!114 &660754388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8325,6 +8328,9 @@ MonoBehaviour:
   currentLV: 1
   damageSender: {fileID: 1953807245}
   shootableObjectCtrl: {fileID: 1284040239}
+  increaseHp: 25
+  increaseDamage: 5
+  delayShoot: 0.05
 --- !u!1 &1088231155
 GameObject:
   m_ObjectHideFlags: 0
@@ -8603,8 +8609,11 @@ MonoBehaviour:
   prefabs:
   - {fileID: 1733480306}
   poolObjs: []
-  paramIncreaseTime: 60
+  paramIncreaseTime: 20
   elapsedTime: 0
+  damageSender: {fileID: 1824745453}
+  increaseHp: 10
+  increaseDamage: 1
 --- !u!114 &1123164576
 MonoBehaviour:
   m_ObjectHideFlags: 0
