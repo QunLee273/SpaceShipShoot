@@ -17,7 +17,6 @@ public class ShipDamageReceiver : DamageReceiver
     [SerializeField] protected float flashTime = 0.1f;
     [SerializeField] protected bool isImmortal = false;
 
-
     protected override void LoadComponents()
     {
         base.LoadComponents();

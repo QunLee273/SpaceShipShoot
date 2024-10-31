@@ -76,7 +76,11 @@ public abstract class Spawner : ShipMonoBehaviour
     {
         foreach (Transform poolObj in this.poolObjs)
         {
-            if (poolObj == null) continue;
+            if (poolObj == null)
+            {
+                this.poolObjs.Remove(poolObj);
+                continue;
+            }
 
             if (poolObj.name == prefab.name)
             {

@@ -3208,7 +3208,7 @@ GameObject:
   - component: {fileID: 480373177}
   m_Layer: 0
   m_Name: Meteorite_1
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8603,6 +8603,8 @@ MonoBehaviour:
   prefabs:
   - {fileID: 1733480306}
   poolObjs: []
+  paramIncreaseTime: 60
+  elapsedTime: 0
 --- !u!114 &1123164576
 MonoBehaviour:
   m_ObjectHideFlags: 0

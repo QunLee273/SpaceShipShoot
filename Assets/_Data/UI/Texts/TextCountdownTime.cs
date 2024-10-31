@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TextCountdownTime : BaseText
 {
+    [Header("TextCountdownTime")]
     [SerializeField] protected DateTime endTime;
     [SerializeField] protected float countdownTimer;
     [SerializeField] protected GameObject bossSpawn;
@@ -16,16 +17,7 @@ public class TextCountdownTime : BaseText
 
     protected virtual void FixedUpdate()
     {
-        if (this.endTime <= DateTime.Now)
-        {
-            this.bossSpawn.SetActive(true);
-            
-            this.enabled = false;
-        }
-        else
-        {
-            this.UpdateTime();
-        }
+        this.SpawnBoss();
     }
 
     protected virtual void UpdateTime()
@@ -41,5 +33,19 @@ public class TextCountdownTime : BaseText
     public void SetEndTime(DateTime endTime)
     {
         this.endTime = endTime;
+    }
+
+    protected void SpawnBoss()
+    {
+        if (this.endTime <= DateTime.Now)
+        {
+            this.bossSpawn.SetActive(true);
+
+            this.enabled = false;
+        }
+        else
+        {
+            this.UpdateTime();
+        }
     }
 }
