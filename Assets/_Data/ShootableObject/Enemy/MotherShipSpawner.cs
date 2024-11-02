@@ -7,7 +7,7 @@ public class MotherShipSpawner : Spawner
     private static MotherShipSpawner instance;
     public static MotherShipSpawner Instance => instance;
 
-    [SerializeField] protected float paramIncreaseTime = 20f;
+    [SerializeField] protected float paramIncreaseTime = 60f;
     [SerializeField] protected float elapsedTime = 0f;
 
     [SerializeField] protected int increaseHp = 10;

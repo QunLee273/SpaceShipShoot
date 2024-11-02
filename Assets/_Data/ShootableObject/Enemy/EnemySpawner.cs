@@ -7,7 +7,7 @@ public class EnemySpawner : Spawner
     private static EnemySpawner instance;
     public static EnemySpawner Instance => instance;
 
-    [SerializeField] protected float paramIncreaseTime = 20f;
+    [SerializeField] protected float paramIncreaseTime = 60f;
     [SerializeField] protected float elapsedTime = 0f;
 
     [SerializeField] protected DamageSender damageSender;
