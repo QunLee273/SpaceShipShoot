@@ -48,6 +48,7 @@ public class ShipDamageReceiver : DamageReceiver
 
     protected override void OnDead()
     {
+        audioManager.PlaySFX(audioManager.deadClip);
         this.shootablObjectCtrl.Despawn.DespawnObject();
         this.ShowGameOver();
     }

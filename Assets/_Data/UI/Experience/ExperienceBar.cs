@@ -108,7 +108,6 @@ public class ExperienceBar : ShipMonoBehaviour
     {
         this.damageSender.damage += increaseDamage;
         //Debug.Log("Damage increased to: " + this.damageSender.damage);
-        
 
         this.shootableObjectCtrl.DamageReceiver.HPMax += increaseHp;
         this.shootableObjectCtrl.DamageReceiver.HP = this.shootableObjectCtrl.DamageReceiver.HPMax;

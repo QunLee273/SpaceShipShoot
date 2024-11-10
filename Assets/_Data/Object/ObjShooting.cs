@@ -11,6 +11,15 @@ public abstract class ObjShooting : ShipMonoBehaviour
     [SerializeField] protected bool isShip = false;
     [SerializeField] protected bool isEnemy = false;
 
+    [SerializeField] protected AudioManager audioManager;
+
+    protected override void LoadComponents()
+    {
+        base.LoadComponents();
+
+        this.LoadAudioManager();
+    }
+
     void Update()
     {
         this.IsShooting();
@@ -19,6 +28,13 @@ public abstract class ObjShooting : ShipMonoBehaviour
     private void FixedUpdate()
     {
         this.Shooting();
+    }
+
+    protected void LoadAudioManager()
+    {
+        if (this.audioManager != null) return;
+        this.audioManager = GameObject.FindWithTag("Audio").GetComponent<AudioManager>();
+        Debug.Log(transform.name + ": LoadAudioManager", gameObject);
     }
 
     protected virtual void Shooting()
@@ -40,6 +56,8 @@ public abstract class ObjShooting : ShipMonoBehaviour
             newBullet.gameObject.SetActive(true);
             BulletCtrl bulletCtrl = newBullet.GetComponent<BulletCtrl>();
             bulletCtrl.SetShooter(transform.parent);
+
+            audioManager.PlaySFX(audioManager.atkClip);
         }
 
         if (this.isEnemy)

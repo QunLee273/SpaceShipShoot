@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjMovement : ShipMonoBehaviour
 {
     [SerializeField] protected Vector3 targetPosition;
-    [SerializeField] protected float speed = 0.01f;
+    [SerializeField] protected float speed = 5f;
     [SerializeField] protected float rotSpeed = 3f;
     [SerializeField] protected float distance = 4f;
     [SerializeField] protected float minDistance = 1f;

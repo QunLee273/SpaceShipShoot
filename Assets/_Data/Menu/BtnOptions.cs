@@ -9,6 +9,13 @@ public class BtnOptions : BaseButton
     [SerializeField] protected GameObject uiOption;
     public GameObject UIOption => uiOption;
 
+    protected override void Start()
+    {
+        base.Start();
+
+        uiOption.SetActive(false);
+    }
+
     protected override void OnClick()
     {
         this.LoadOptions();
