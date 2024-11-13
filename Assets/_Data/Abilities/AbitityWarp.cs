@@ -45,8 +45,8 @@ public class AbitityWarp : ActiveAbility
 
     protected virtual void SetWarpTarget(Vector3 directionToMouse)
     {
-        // Cài đặt vị trí đích để warp theo hướng từ lớp kế thừa
         this.targetPosition = transform.position + directionToMouse * warpDistance;
+        this.targetPosition.z = 0f;
     }
 
     protected virtual void Warping()
@@ -67,8 +67,9 @@ public class AbitityWarp : ActiveAbility
     protected virtual void MoveObj()
     {
         Transform obj = this.abilities.AbilityObjectCtrl.transform;
+        SpawnWarpEffect(obj.position);
         obj.position = targetPosition; 
-        SpawnWarpEffect(obj.position); 
+        
     }
 
     protected virtual void SpawnWarpEffect(Vector3 position)
