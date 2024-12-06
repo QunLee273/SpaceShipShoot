@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class XPPickable : ItemPickupable
 {
-    private static XPPickable instance;
-    public static XPPickable Instance => instance;
-
     public int exp;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             ExperienceBar.Instance.currentXP += exp;
         }

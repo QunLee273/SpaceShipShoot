@@ -906,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc1c13b5c0824242a7ac84f14cf719c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setting: {fileID: 86320628}
+  setting: {fileID: 0}
 --- !u!1 &93416927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1684,11 @@ MonoBehaviour:
   hpMax: 2
   isDead: 0
   shootablObjectCtrl: {fileID: 1284040239}
+  rendererSprite: {fileID: 3302221598115750908}
   gameOver: {fileID: 588089010}
+  immortalDuration: 2
+  flashTime: 0.1
+  isImmortal: 0
 --- !u!135 &200497869
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1704,8 +1708,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.25
+  m_Center: {x: -0.03, y: 0, z: 0}
 --- !u!1 &203234222
 GameObject:
   m_ObjectHideFlags: 0
@@ -5661,8 +5665,8 @@ MonoBehaviour:
   isShip: 0
   isEnemy: 1
   target: {fileID: 1284040238}
-  distance: 10
-  shootDistance: 15
+  distance: 5
+  shootDistance: 10
 --- !u!1 &802497757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5826,7 +5830,7 @@ GameObject:
   - component: {fileID: 806395465}
   m_Layer: 0
   m_Name: MotherShip_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7760,7 +7764,7 @@ GameObject:
   - component: {fileID: 1026363136}
   m_Layer: 0
   m_Name: Boss_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9403,7 +9407,7 @@ GameObject:
   - component: {fileID: 1160080345}
   m_Layer: 0
   m_Name: Meteorite_2
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12446,7 +12450,7 @@ GameObject:
   - component: {fileID: 1589629395}
   m_Layer: 0
   m_Name: Bullet_2
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13466,7 +13470,7 @@ GameObject:
   - component: {fileID: 1733480305}
   m_Layer: 0
   m_Name: Enemy_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
