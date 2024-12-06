@@ -12,6 +12,6 @@ public class AbitityWarpFromInput : AbitityWarp
 
     protected virtual void UpdateKeyDirection()
     {
-        this.keyDirection = InputManager.Instance.Direction;
+        this.keyDirection = InputManager.Instance.OnWarping == 1;
     }
 }

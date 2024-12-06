@@ -11,7 +11,10 @@ public class InputManager : MonoBehaviour
     public Vector3 MouseWorldPos => mouseWorldPos;
 
     [SerializeField] protected float onFiring;
-    public float OnFiring { get => onFiring; }
+    public float OnFiring  => onFiring;
+
+    [SerializeField] protected float onWarping;
+    public float OnWarping => onWarping;
 
     protected Vector4 direction;
     public Vector4 Direction => direction;
@@ -25,6 +28,7 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         this.GetMouseDown();
+        this.GetSpaceDown();
         this.GetDirectionByKeyDown();
     }
 
@@ -38,6 +42,11 @@ public class InputManager : MonoBehaviour
         this.onFiring = Input.GetAxis("Fire1");
     }
 
+    protected virtual void GetSpaceDown()
+    {
+        this.onWarping = Input.GetAxis("Jump");
+    }
+
     protected virtual void GetMousePos()
     {
         this.mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -45,21 +54,9 @@ public class InputManager : MonoBehaviour
 
     protected virtual void GetDirectionByKeyDown()
     {
-        this.direction.x = Input.GetKeyDown(KeyCode.A) ? 1 : 0;
-        if (this.direction.x == 0) this.direction.x = Input.GetKeyDown(KeyCode.LeftArrow) ? 1 : 0;
-
-        this.direction.y = Input.GetKeyDown(KeyCode.D) ? 1 : 0;
-        if (this.direction.y == 0) this.direction.y = Input.GetKeyDown(KeyCode.RightArrow) ? 1 : 0;
-
-        this.direction.z = Input.GetKeyDown(KeyCode.W) ? 1 : 0;
-        if (this.direction.z == 0) this.direction.z = Input.GetKeyDown(KeyCode.UpArrow) ? 1 : 0;
-
-        this.direction.w = Input.GetKeyDown(KeyCode.S) ? 1 : 0;
-        if (this.direction.w == 0) this.direction.w = Input.GetKeyDown(KeyCode.DownArrow) ? 1 : 0;
-
-        //if (this.direction.x == 1) Debug.Log("Left");
-        //if (this.direction.y == 1) Debug.Log("Right");
-        //if (this.direction.z == 1) Debug.Log("Up");
-        //if (this.direction.w == 1) Debug.Log("Down");
+        this.direction.x = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) ? 1 : 0;
+        this.direction.y = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1 : 0;
+        this.direction.z = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) ? 1 : 0;
+        this.direction.w = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) ? 1 : 0;
     }
 }

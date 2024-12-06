@@ -14,6 +14,13 @@ public class BtnSetting : BaseButton
         this.LoadSetting();
     }
 
+    protected override void Start()
+    {
+        base.Start();
+
+        Setting.SetActive(false);
+    }
+
     protected virtual void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

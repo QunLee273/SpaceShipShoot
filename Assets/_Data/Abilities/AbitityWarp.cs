@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,18 +7,24 @@ public class AbitityWarp : ActiveAbility
     [Header("Warp")]
     [SerializeField] protected Spawner spawner;
     [SerializeField] protected bool isWarping = false;
+    [SerializeField] protected bool keyDirection = false;
     [SerializeField] protected float warpSpeed = 1f;
-    [SerializeField] protected float warpDistance = 2f;
-    protected Vector4 keyDirection;
-    [SerializeField] protected Vector4 warpDirection;
+    [SerializeField] protected float warpDistance = 5f;
+    protected Vector3 targetPosition; 
 
+    AudioManager audioManager;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        audioManager = GameObject.FindWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     protected override void Update()
     {
         base.Update();
-        this.CheckWarpDirection();
+        this.CheckWarpInput();
     }
-
 
     protected override void FixedUpdate()
     {
@@ -26,56 +32,34 @@ public class AbitityWarp : ActiveAbility
         this.Warping();
     }
 
-    protected virtual void CheckWarpDirection()
+    protected virtual void CheckWarpInput()
     {
-        if (!this.isReady) return;
-        if (this.isWarping) return;
+        if (keyDirection && isReady)
+        {
+            Vector3 directionToMouse = (InputManager.Instance.MouseWorldPos - transform.position).normalized;
 
-        if (this.keyDirection.x == 1) this.WarpLeft();
-        if (this.keyDirection.y == 1) this.WarpRight();
-        if (this.keyDirection.z == 1) this.WarpUp();
-        if (this.keyDirection.w == 1) this.WarpDown();
+            this.SetWarpTarget(directionToMouse);
+            this.isWarping = true;
+        }
     }
 
-    protected virtual void WarpLeft()
+    protected virtual void SetWarpTarget(Vector3 directionToMouse)
     {
-        this.warpDirection.x = 1;
-    }
-
-    protected virtual void WarpRight()
-    {
-        this.warpDirection.y = 1;
-    }
-
-    protected virtual void WarpUp()
-    {
-        this.warpDirection.z = 1;
-    }
-
-    protected virtual void WarpDown()
-    {
-        this.warpDirection.w = 1;
+        this.targetPosition = transform.position + directionToMouse * warpDistance;
+        this.targetPosition.z = 0f;
     }
 
     protected virtual void Warping()
     {
-        if (this.isWarping) return;
-        if (this.IsDirectionNotSet()) return;
+        if (!isWarping) return;
 
-        this.isWarping = true;
-        Invoke(nameof(this.WarpFinish), this.warpSpeed);
-    }
-
-    protected virtual bool IsDirectionNotSet()
-    {
-        return this.warpDirection.x == 0 && this.warpDirection.y == 0
-            && this.warpDirection.z == 0 && this.warpDirection.w == 0;
+        audioManager.PlaySFX(audioManager.warpClip);
+        Invoke(nameof(this.WarpFinish), warpSpeed);
     }
 
     protected virtual void WarpFinish()
     {
         this.MoveObj();
-        this.warpDirection.Set(0, 0, 0, 0);
         this.isWarping = false;
         this.Active();
     }
@@ -83,32 +67,15 @@ public class AbitityWarp : ActiveAbility
     protected virtual void MoveObj()
     {
         Transform obj = this.abilities.AbilityObjectCtrl.transform;
-        Vector3 newPos = obj.position;
-        if (this.warpDirection.x == 1) newPos.x -= this.warpDistance;
-        if (this.warpDirection.y == 1) newPos.x += this.warpDistance;
-        if (this.warpDirection.z == 1) newPos.y += this.warpDistance;
-        if (this.warpDirection.w == 1) newPos.y -= this.warpDistance;
-
-        Quaternion fxRot = this.GetFXQuaternion();
-        Transform fx = FXSpawner.Instance.Spawn(FXSpawner.warp, obj.position, fxRot);
-        fx.gameObject.SetActive(true);
-
-        obj.position = newPos;
+        SpawnWarpEffect(obj.position);
+        obj.position = targetPosition; 
+        
     }
 
-    protected virtual Quaternion GetFXQuaternion()
+    protected virtual void SpawnWarpEffect(Vector3 position)
     {
-        Vector3 vector = new Vector3();
-        if (this.warpDirection.x == 1) vector.z = 0;
-        if (this.warpDirection.y == 1) vector.z = 180;
-        if (this.warpDirection.z == 1) vector.z = -90;
-        if (this.warpDirection.w == 1) vector.z = 90;
-
-        if (this.warpDirection.x == 1 && this.warpDirection.w == 1) vector.z = 45;
-        if (this.warpDirection.y == 1 && this.warpDirection.w == 1) vector.z = 135;
-        if (this.warpDirection.x == 1 && this.warpDirection.z == 1) vector.z = -45;
-        if (this.warpDirection.y == 1 && this.warpDirection.z == 1) vector.z = -135;
-
-        return Quaternion.Euler(vector);
+        Quaternion fxRot = Quaternion.identity;
+        Transform fx = FXSpawner.Instance.Spawn(FXSpawner.warp, position, fxRot);
+        fx.gameObject.SetActive(true);
     }
 }

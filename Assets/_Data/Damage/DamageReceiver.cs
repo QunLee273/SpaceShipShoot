@@ -11,6 +11,8 @@ public abstract class DamageReceiver : ShipMonoBehaviour
     [SerializeField] protected int hpMax = 2;
     [SerializeField] protected bool isDead = false;
 
+    protected AudioManager audioManager;
+
     public int HP
     {
         get { return hp; }
@@ -31,6 +33,8 @@ public abstract class DamageReceiver : ShipMonoBehaviour
     {
         base.LoadComponents();
         this.LoadCollider();
+
+        audioManager = GameObject.FindWithTag("Audio").GetComponent<AudioManager>();
     }
 
     protected virtual void LoadCollider()
@@ -61,6 +65,7 @@ public abstract class DamageReceiver : ShipMonoBehaviour
         if (this.isDead) return;
 
         this.hp -= deduct;
+        audioManager.PlaySFX(audioManager.hitClip);
         if (this.hp < 0) this.hp = 0;
         this.CheckIsDead();
     }

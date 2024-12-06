@@ -6,11 +6,24 @@ public class EnemySpawner : Spawner
 {
     private static EnemySpawner instance;
     public static EnemySpawner Instance => instance;
+
+    [SerializeField] protected float paramIncreaseTime = 60f;
+    [SerializeField] protected float elapsedTime = 0f;
+
+    [SerializeField] protected DamageSender damageSender;
+    [SerializeField] protected int increaseHp = 10;
+    [SerializeField] protected int increaseDamage = 1;
+
     protected override void Awake()
     {
         base.Awake();
         if (EnemySpawner.instance != null) Debug.LogError("Only 1 EnemySpawner allow to exist");
         EnemySpawner.instance = this;
+    }
+
+    protected void FixedUpdate()
+    {
+        UpdateTime();
     }
 
     public override Transform Spawn(Transform prefab, Vector3 spawnPos, Quaternion rotation)
@@ -35,5 +48,28 @@ public class EnemySpawner : Spawner
         hpBar.SetFollowTarget(newEnemy);
 
         newHpBar.gameObject.SetActive(true);
+    }
+
+    protected void UpdateTime()
+    {
+        elapsedTime += Time.fixedDeltaTime;
+        if (elapsedTime >= paramIncreaseTime)
+        {
+            IncreaseEnemyParam();
+            elapsedTime = 0;
+        }
+    }
+
+    protected void IncreaseEnemyParam()
+    {
+        damageSender.damage += increaseDamage;
+        foreach (Transform enemy in holder)
+        {
+            EnemyCtrl enemyCtrl = enemy.GetComponent<EnemyCtrl>();
+            if (enemyCtrl != null)
+            {
+                enemyCtrl.DamageReceiver.HPMax += increaseHp;
+            }
+        }
     }
 }
