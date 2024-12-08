@@ -83,4 +83,22 @@ public class AudioSetting : ShipMonoBehaviour
         SetMusicVolume();
         SetSFXVolume();
     }
+    
+    public void ResetSettings()
+    {
+        // Đặt lại giá trị mặc định cho slider
+        musicSlider.value = 0.5f;
+        SFXSlider.value = 0.5f;
+
+        // Cập nhật giá trị vào AudioMixer
+        SetMusicVolume();
+        SetSFXVolume();
+
+        // Lưu giá trị mặc định vào PlayerPrefs
+        PlayerPrefs.SetFloat("musicVolume", 0.5f);
+        PlayerPrefs.SetFloat("SFXVolume", 0.5f);
+        PlayerPrefs.Save();
+
+        Debug.Log("Cài đặt âm thanh đã được đặt lại về mặc định.");
+    }
 }
