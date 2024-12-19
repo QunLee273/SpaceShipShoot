@@ -42,7 +42,7 @@ public class ItemLooter : InventoryAbstract
         ItemCode itemCode = itemPickupable.GetItemCode();
         ItemInventory itemInventory = itemPickupable.ItemCtrl.ItemInventory;
 
-        if (this.inventory.AddItem(itemInventory))
+        if (itemCode == ItemCode.Experience)
         {
             itemPickupable.Picked();
 
@@ -55,6 +55,11 @@ public class ItemLooter : InventoryAbstract
                 // Cập nhật thanh XP
                 ExperienceBar.Instance.XPShowing();
             }
+        }
+        else
+        {
+            this.inventory.AddItem(itemInventory);
+            itemPickupable.Picked();
         }
     }
 }

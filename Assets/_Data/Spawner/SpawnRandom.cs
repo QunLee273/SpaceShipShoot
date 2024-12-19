@@ -9,6 +9,11 @@ public class SpawnRandom : ShipMonoBehaviour
     [SerializeField] protected float randomDelay = 1f;
     [SerializeField] protected float randomTimer = 0f;
     [SerializeField] protected float randomLimit = 9f;
+    public float RandomLimit
+    {
+        get { return randomLimit; }
+        set { randomLimit = value; }
+    }
 
     protected override void LoadComponents()
     {

@@ -73,8 +73,8 @@ public class ExperienceBar : ShipMonoBehaviour
 
     public virtual void XPShowing()
     {
-        float XPPercent = this.currentXP / this.maxXP;
-        this.slider.value = XPPercent;
+        slider.value = this.currentXP;
+        this.slider.maxValue = maxXP;
 
         this.txtExp.SetText(currentXP + "/" + maxXP);
         this.txtLevel.SetText("Level: " + currentLV);

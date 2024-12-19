@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootableObjectDamReceiver : DamageReceiver
 {
     [Header("Shootable Object")]
+    [SerializeField] protected string bullet = "Bullet_2";
     [SerializeField] protected ShootableObjectCtrl shootablObjectCtrl;
 
     protected override void LoadComponents()

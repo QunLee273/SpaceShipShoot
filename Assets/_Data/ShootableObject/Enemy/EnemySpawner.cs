@@ -7,9 +7,10 @@ public class EnemySpawner : Spawner
     private static EnemySpawner instance;
     public static EnemySpawner Instance => instance;
 
-    [SerializeField] protected float paramIncreaseTime = 60f;
+    [SerializeField] protected float paramIncreaseTime = 30f;
     [SerializeField] protected float elapsedTime = 0f;
 
+    [SerializeField] protected SpawnRandom spawnRandom;
     [SerializeField] protected DamageSender damageSender;
     [SerializeField] protected int increaseHp = 10;
     [SerializeField] protected int increaseDamage = 1;
@@ -55,6 +56,7 @@ public class EnemySpawner : Spawner
         elapsedTime += Time.fixedDeltaTime;
         if (elapsedTime >= paramIncreaseTime)
         {
+            spawnRandom.RandomLimit += 1;
             IncreaseEnemyParam();
             elapsedTime = 0;
         }

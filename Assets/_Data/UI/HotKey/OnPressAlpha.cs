@@ -9,6 +9,7 @@ public class InOnPressAlpha : UIHotKeyAbstract
         this.CheckAlphaIsPress();
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     protected virtual void CheckAlphaIsPress()
     {
         if (InputHotKeyManager.Instance.isAlpha1) this.Press(0);
